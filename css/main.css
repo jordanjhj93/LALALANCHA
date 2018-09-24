@@ -384,6 +384,7 @@ div.acciones{
     margin: 0 auto;
     text-align: center;
     display: block;
+    
 }
 
 .button{
@@ -435,10 +436,11 @@ div.acciones{
 
         background-color: #167ac6;
         position:absolute;
-        bottom:  ;
+        bottom:;
         clear: both;
-        display: block;
+        display:inline-block;
         width: 100%;
+    
 
 
 
@@ -451,6 +453,7 @@ div.acciones{
 
 @media only screen and (min-width:768px){
     .footer{
+        
         bottom: 0;
 
     }
@@ -555,6 +558,8 @@ div.acciones{
     width: 35%;
     float: right;
     background-color: #167ac6;
+    display:inline-block;
+    margin-bottom: 15px;
 }
 
 .ult-facturas h3{
@@ -563,6 +568,7 @@ div.acciones{
 }
 
 .select-factura{
+    display: inline-block;
     clear: left;
     float: left;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
