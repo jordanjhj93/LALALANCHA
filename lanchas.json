@@ -1,0 +1,39 @@
+{ 
+    "bills" : [{
+    
+        "id" : "",
+        "date" : "",
+        "status" : "",
+
+        "Client" : {
+
+            "name" : "",
+            "id" : "",
+            "nacionality" : "",
+            "phone" : "",
+            "address" : "",
+            "email" : ""
+
+
+        },
+
+        "items" : [
+            {
+                "p_id" : "",
+                "description" : "",
+                "concept" : "",
+                "quantity" : "",
+                "unitPrice" : "",
+                "totalAmount" : ""
+
+            }
+        ],
+
+        "subTotal" : "",
+        "taxes" : "",
+        "total" : ""
+    
+        }]
+    
+
+}
