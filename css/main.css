@@ -117,8 +117,8 @@ body{
 }
 
 .contenedor{
-    width: 98%;
-    margin: 0 auto;
+     max-width: 1100px;
+     margin: 0 auto;
     
 }
 
@@ -253,6 +253,7 @@ div.caja{
     text-align: center;
     width: 100%;
     display:inline-block;
+    margin: 0 auto;
 
 
 }
@@ -269,17 +270,17 @@ div.caja{
 
 @media only screen and (min-width:768px){
     div.caja{
-        width: 65%;
+        width: 98%;
         display:inline-block;
         overflow: auto;
+        
 
     }
 
     .caja input{
         display: inline-block;
-        float: left;
         height: 60px;
-        width: 98%;
+        width: 100%;
         
         
 
@@ -324,6 +325,7 @@ div.caja{
 
 .lista-articulos{
     width: 100%;
+    display: block;
 }
 
 .lista-articulos table{
@@ -347,9 +349,8 @@ table th{
 @media only screen and (min-width:768px){
     .lista-articulos{
         overflow: auto;
-        float: left;
-        display: inline-block;
-        width: 65%;
+        display: block;
+        width: 100%;
 
     }
 
@@ -408,23 +409,30 @@ div.acciones{
 
 @media only screen and (min-width:768px){
     div.acciones{
-        text-align: left;
-        clear: right;
-        float: right;
-        width: 35%;
+        text-align: center;
+        width: 100%;
         display:block;
 
     }
 
    
 
-    input.procesar{
-        width: 70%;
+    .enviar{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .cancelar{
+        width: 50%;
+        float: right;
+        display: inline-block;
     }
 
     input.cancelar{
 
-        width: 70%;
+        width: 100%;
+        
+        
 
     }
 
@@ -435,10 +443,9 @@ div.acciones{
 
 
         background-color: #167ac6;
-        position:absolute;
-        bottom:;
-        clear: both;
-        display:inline-block;
+        position: absolute;
+        bottom: 0;
+        display:block;
         width: 100%;
     
 
@@ -454,7 +461,7 @@ div.acciones{
 @media only screen and (min-width:768px){
     .footer{
         
-        bottom: 0;
+    
 
     }
     
@@ -462,122 +469,55 @@ div.acciones{
 
 
 /****************formulario***************/
-.formulario{
-    width: 100%;
-    display: inline-block;
-    margin: 0 auto 20px auto;
-    text-align: center;
-    
+
+.formulario-cliente{
+    width: 65%;
+    margin-bottom: 25px;
 }
 
-.formulario div input{
-    width: 60%;
-    border: none;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    
+@media (min-width:768px) {
+     .campos {
+          display: flex;
+          justify-content: space-between;
+         flex-wrap: wrap;
+         flex-basis: auto;
+     }
+     .campo {
+          flex: 0 0 calc(33.3% - 1rem );
+         
+     }
 }
 
-.formulario div label{
-    width: 30%;
-    display: inline-block;
-    padding-right: 2px;
+.campo {
+     padding: .5rem 0;
 }
-
-.terciario label{
-    width: 30%;
-    padding-right: 2px;
-    display: inline-block;
-    
+.campo label {
+    display: block;
+     font-size: 1.2rem;
 }
-
-.terciario textarea{
-    display: inline-block;
-    width: 60%;
-    border: none;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    
-}
-
-
-
-@media only screen and (min-width:768px){
-    .formulario{
-        clear: left;
-        float: left;
-        width: 65%;
-        overflow: auto;
-        text-align: left;
-        
-
-    }
-
-    .formulario div{
-        float: left;
-        display: inline-block;
-        overflow: auto;
-    }
-
-    .principal div{
-        width: 33.3%;
-
-    }
-
-    .formulario div input{
-        text-align: left;
-        width: 70%;
-        
-    }
-
-    .formulario div label{
-        width: 25%;
-        float: left;
-        
-
-    }
-
-    .secundario div{
-        width: 50%;
-    }
-
-    .terciario label{
-        width: 15%;
-        float: left;
-    }
-
-
-    .terciario textarea{
-        display: inline-block;
-        width: 70%;
-
-    }
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="email"]{
+     width:94%;
+     border: .5px solid darkgray;
+     padding: .5rem;
+     height: 2rem;
+     margin-top: .5rem;
+     font-size: 1.2rem;
 }
 
 /***************************facturas***********************/
-.ult-facturas{
-    height: 300px;
-    width: 35%;
-    float: right;
-    background-color: #167ac6;
-    display:inline-block;
-    margin-bottom: 15px;
-}
-
-.ult-facturas h3{
-    padding: 10px 10px;
-    color: #ffeb3b;
-}
 
 .select-factura{
+    background-color: #167ac6;
     display: inline-block;
-    clear: left;
-    float: left;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    width: 63.8%;
+    width: 98%;
 }
 
 .select-factura h3{
     padding: 10px 10px;
-    color: dimgray;
+    color: #ffeb3b;
     
 }
 

@@ -1,8 +1,8 @@
 <?php 
 	$myhost= "localhost";
-    $mynamedb="lanchas";
+    $mynamedb="facturas";
     $myuserdb="root";
-    $mypassdb="123456";
+    $mypassdb="root";
 
 	class mysql {
 	    var $conexion;
@@ -25,7 +25,8 @@
 				$this->error = $e->getMessage();
 			}	
 	        return $this->conexion;
-	    }
+		}
+
 		function ErrorInfo(){
 			return $this->error;
 		}
